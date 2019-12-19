@@ -1,90 +1,152 @@
 <!DOCTYPE html>
-<html lang="e">
+<html lang="es">
   <head>
     <meta charset="UTF-16" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <title>Mi portafolio</title>
+    <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro&display=swap" rel="stylesheet">
     <link rel="shortcut icon" href="./src/favicon.png"   type="image/x-icon">
     <link rel="stylesheet" href="./index.css">
   </head>
 
   <body>
-    <!--  -->
-    <header>
-      <div>
-        <figure>
+    <!-- header -->
+    <header class="header">
+      <div class="container">
+        <figure class="logo">
           <img src="./src/logo.png" alt="logo">
         </figure>
-      </div>
-      <nav>
-        <ol>
-          <li>
-            <a href="#portafolio">portafolio</a>
-          </li>
-          <li>
-            <a href="#experiencia">experiencia</a>
-          </li>
-          <li>
-            <a href="#contacto">trabajemos juntos</a>
-          </li>
+        <nav class="menu">
+          <ol>
+            <li>
+              <a href="#portafolio">portafolio</a>
+            </li>
+            <li>
+              <a href="#experiencia">experiencia</a>
+            </li>
+            <li>
+              <a href="#contacto">trabajemos juntos</a>
+            </li>
         </ol>
-      </nav>
-    </header>
-    <!--  -->
+       </nav>
+      </div>
+      </header>
+    <!-- parte principal -->
     <section class="hero">
+    <div class="container">
       <h1>
         Hola! Soy <strong>Cristian Caraballo</strong> <br />
         Desarrollador <strong>frontend</strong> con <br />
         pasion por el Desarrollo <strong>Web</strong>
       </h1>
-      <img src="./src/hero.jpg" alt="heroImage" width="500"/>
+      <img class="hero_img" src="./src/hero.jpg" alt="heroImage"/>
+    </div>
     </section>
-    <!--  -->
-    <section class="portafolio" id="portafolio">
+    <!-- seccion de portafolio -->
+    <section class="portfolio" id="portafolio">
+      <div class="container">
       <h2>Portafolio (Proyectos Destacados)</h2>
-      <article>
-        <h3>Platzi Video</h3>
-        <h6>React Native/React</h6>
-        <p><small><strong>Fecha:</strong>01/07/2018 </small></p>
-
-        <p>
-          <small>
-            <strong>Puedes verlos en:</strong><a href="www.platzi.com/native">www.platzi.com/native</a>
-          </small>
-        </p>
-
-        <p>
-          Platzi Video fue el resultado de 3 meses de trabajo para crear la
-          mejor app para enseñar el funcionamiento de React y React Native.Desde
-          crear un vista-detalle, hasta patrones avanzados de navegacion, este
-          proyecto h sido el ejemplo de futuros creadores de aplicaciones
-          multiplatafoma
-        </p>
-        <img src="./src/platzi-video-react-native.png" alt="proyecto del curso de react native" width="500">
-      </article>
-    </section>
-    <!--  -->
-    <section id="experiencia">
-      <h2>Mas sobre mi experiencia</h2>
-      <article>
-        <figure>
-          <img src="./src/platzi-conf.jpg" alt="" width="500">
+      <article class="project">
+        <div class="project-details">
+          <h3 class="project_title">Platzi Video</h3>
+          <h6 class="project_course">React Native/React</h6>
+          <p class="project_date"><small><strong>Fecha:</strong>01/07/2018 </small></p>
+  
+          <p class="project_url">
+            <small>
+              <strong>Puedes verlos en:</strong><a href="www.platzi.com/native">www.platzi.com/native</a>
+            </small>
+          </p>
+  
+          <p class="project_description">
+            Platzi Video fue el resultado de 3 meses de trabajo para crear la
+            mejor app para enseñar el funcionamiento de React y React Native.Desde
+            crear un vista-detalle, hasta patrones avanzados de navegacion, este
+            proyecto h sido el ejemplo de futuros creadores de aplicaciones
+            multiplatafoma
+          </p>
+        </div>
+        <figure class="project_imageContainer">
+          <img class="project_image" src="./src/platzi-video-react-native.png" alt="proyecto del curso de react native">
         </figure>
-        <h3>PlatziConf Mexico 2018</h3>
-        <p>El evento más grande sobre gente que quiere aprender más de internet. En esté evento te comparto como tener una vida de constante aprendizaje.</p>
-        <a href="">Ver Platica</a>
       </article>
+      </div>
     </section>
-    <!--  -->
-    <section id="contacto">    
-      <form action="/suscripcion/" method="post">
-        <h3>¿Creamos algo juntos?</h3>
+    <!-- seccion de experiencias profecionales -->
+    <section  class="experience" id="experiencia">
+    <div class="container">
+      <h2>Mas sobre mi experiencia</h2>
+    </div>
+      <div class="experienceContainer">
+      <div class="container">
+        <article class="event">
+          <figure class="event_imageContainer">
+            <img class="event_image" src="./src/platzi-conf.jpg" alt="" >
+          </figure>
+          <div class="event_details">
+            <h3 class="event_title">PlatziConf Mexico 2018</h3>
+            <p class="event_description">El evento más grande sobre gente que quiere aprender más de internet. En esté evento te comparto como tener una vida de constante aprendizaje.</p>
+            <a class="event_url" href="">Ver Platica</a>
+          </div>
+        </article>
+        <article class="event">
+          <figure class="event_imageContainer">
+            <img class="event_image" src="./src/platzi-conf.jpg" alt="" >
+          </figure>
+          <div class="event_details">
+            <h3 class="event_title">PlatziConf Mexico 2018</h3>
+            <p class="event_description">El evento más grande sobre gente que quiere aprender más de internet. En esté evento te comparto como tener una vida de constante aprendizaje.</p>
+            <a class="event_url" href="">Ver Platica</a>
+          </div>
+        </article>
+        <article class="event">
+          <figure class="event_imageContainer">
+            <img class="event_image" src="./src/platzi-conf.jpg" alt="" >
+          </figure>
+          <div class="event_details">
+            <h3 class="event_title">PlatziConf Mexico 2018</h3>
+            <p class="event_description">El evento más grande sobre gente que quiere aprender más de internet. En esté evento te comparto como tener una vida de constante aprendizaje.</p>
+            <a class="event_url" href="">Ver Platica</a>
+          </div>
+        </article>
+        <article class="event">
+          <figure class="event_imageContainer">
+            <img class="event_image" src="./src/platzi-conf.jpg" alt="" >
+          </figure>
+          <div class="event_details">
+            <h3 class="event_title">PlatziConf Mexico 2018</h3>
+            <p class="event_description">El evento más grande sobre gente que quiere aprender más de internet. En esté evento te comparto como tener una vida de constante aprendizaje.</p>
+            <a class="event_url" href="">Ver Platica</a>
+          </div>
+        </article>
+      </div>
+      </div>
+    </section>
+    <!-- seccion de contacto -->
+    <section class="contact" id="contacto">    
+    <div class="container">
+      <form action="/suscripcion/" method="post"  class="form_email">
+        <h3 >¿Creamos algo juntos?</h3>
         <input type="text" placeholder="Dejame tu email">
         <button>Enviar</button>
       </form>
+      
+      <div class="social">
+        <a class="social_link twiter" href=""></a>
+        <a class="social_link facebook" href=""></a>
+        <a class="social_link github" href=""></a>
+        <a class="social_link instagram" href=""></a>
+      </div>
+    </div>
     </section>
-    <!--  -->
-    <footer>footer</footer>
+    <!-- footer -->
+    <footer class="footer">
+    <div class="container">
+      <p>Curso de Desarrollo Web Online 2018</p>
+      <img src="./src/platzi.png" alt="">
+      <p>designed with <\3 by <a href="https://unlugar">@thespianartis</a></p> 
+    </div>
+    </footer>
   </body>
 </html>
