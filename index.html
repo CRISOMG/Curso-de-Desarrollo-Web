@@ -3,7 +3,6 @@
   <head>
     <meta charset="UTF-16" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <title>Mi portafolio</title>
     <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro&display=swap" rel="stylesheet">
     <link rel="shortcut icon" href="./src/favicon.png"   type="image/x-icon">
@@ -14,10 +13,10 @@
     <!-- header -->
     <header class="header">
       <div class="container">
-        <figure class="logo">
+        <figure class="logoContainer">
           <img src="./src/logo.png" alt="logo">
         </figure>
-        <nav class="menu">
+        <nav class="menuContainer">
           <ol>
             <li>
               <a href="#portafolio">portafolio</a>
@@ -34,7 +33,6 @@
     </header>
     <!-- header end -->
 
-    <!-- parte principal -->
     <section class="hero">
     <div class="container">
       <h1>
@@ -45,14 +43,15 @@
       <img class="hero_img" src="./src/hero.jpg" alt="heroImage"/>
     </div>
     </section>
-    <!-- fin de la parte principal -->
-
-    <!-- seccion de portafolio -->
+    
     <section class="portfolio" id="portafolio">
       <div class="container">
       <h2>Portafolio (Proyectos Destacados)</h2>
+
       <article class="project">
+
         <div class="project-details">
+
           <h3 class="project_title">Platzi Video</h3>
           <h6 class="project_course">React Native/React</h6>
           <p class="project_date"><small><strong>Fecha:</strong>01/07/2018 </small></p>
@@ -67,19 +66,21 @@
             Platzi Video fue el resultado de 3 meses de trabajo para crear la
             mejor app para enseñar el funcionamiento de React y React Native.Desde
             crear un vista-detalle, hasta patrones avanzados de navegacion, este
-            proyecto h sido el ejemplo de futuros creadores de aplicaciones
+            proyecto ha sido el ejemplo de futuros creadores de aplicaciones
             multiplatafoma
           </p>
+
         </div>
+
         <figure class="project_imageContainer">
-          <img class="project_image" src="./src/platzi-video-react-native.png" alt="proyecto del curso de react native">
+        
+          <img class="project_image" width="500px" src="./src/platzi-video-react-native.png" alt="proyecto del curso de react native">
+        
         </figure>
       </article>
       </div>
     </section>
-    <!-- fin de la seccion del portafolio  -->
-
-    <!-- seccion de experiencias profecionales -->
+  
     <section  class="experience" id="experiencia">
     <div class="container">
       <h2>Mas sobre mi experiencia</h2>
@@ -129,9 +130,7 @@
         </div>
       </div>
     </section>
-    <!-- fin de las experiencias -->
 
-    <!-- seccion de contacto -->
     <section class="contact" id="contacto">    
     <div class="container">
       <form action="/suscripcion/" method="post"  class="form_email">
@@ -148,9 +147,7 @@
       </div>
     </div>
     </section>
-    <!-- fin de la seccion de contacto -->
-
-    <!-- footer -->
+   
     <footer class="footer">
     <div class="container">
       <p>Curso de Desarrollo Web Online 2018</p>
@@ -158,7 +155,6 @@
       <p>designed with <\3 by <a href="https://unlugar">@thespianartis</a></p> 
     </div>
     </footer>
-    <!-- fin del footer -->
 
   </body>
 </html>
