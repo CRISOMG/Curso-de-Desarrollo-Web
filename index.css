@@ -41,7 +41,7 @@ h6 {
   width: 50px;
   height: 50px;
   font-size:25px;
-  margin: 8px 0 0 10px;
+  margin: 8px 10px;
   border-radius: 50%;
   color: #f4f9fd;  
   background-color: rgba(0, 0, 0, 0.9);
@@ -49,6 +49,7 @@ h6 {
   line-height: 50px;
   position: fixed;
   z-index: 4;
+  right: 0;
 
 }
 .header {
@@ -370,7 +371,7 @@ li {
     background-color:rgba(2, 111, 255, 0.8);
     top: 0;
     /* left: 0; */
-    left: -100vw;
+    right: -100vw;
     transition: 0.3s;
     bottom: 0;
     width: 100vw;
@@ -382,7 +383,7 @@ li {
     text-decoration: underline;
   }
   .menuContainer.is-active{
-    left: 0;
+    right: 0;
   }
   .menuContainer ol {
     display: flex;
@@ -396,7 +397,7 @@ li {
   .menuContainer ol li a {
     justify-content: center;
   }
-  .header .logoContainer {
+  .logoContainer {
     justify-content: center;
   }
   .project {
@@ -441,6 +442,10 @@ li {
 @media screen and (max-width: 425px) {
   body {
     border: 2px solid blue;
+  }
+
+  .logoContainer{
+    justify-content: start;
   }
   .hero {
     position: relative;
