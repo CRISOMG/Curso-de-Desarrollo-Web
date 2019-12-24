@@ -183,7 +183,7 @@ li {
 }
 
 .experience {
-  /* padding: 20px; */
+  padding: 20px;
 }
 .experience h2 {
   color: #026fff;
@@ -324,7 +324,11 @@ li {
 .footer a {
   color: white;
 }
-
+@media screen and (max-width: 1024px){
+  .hero h1{
+    font-size: 1.8em;
+  }
+}
 @media screen and (max-width: 768px) {
   
   /* .icon-menu{
